@@ -1,15 +1,15 @@
 #!/bin/bash
-#ÏÂÔØºËÐÄ³ÌÐò
+#ä¸‹è½½æ ¸å¿ƒç¨‹åº
 mkdir /v2ray
 cd /v2ray
 rm -f /v2ray/v2ray
 wget https://github.com/byxiaopeng/goorm-v2ray/raw/master/v2ray
-#ÉèÖÃÔËÐÐÈ¨ÏÞ
+#è®¾ç½®è¿è¡Œæƒé™
 chmod +x /v2ray/v2ray
 rm -f /v2ray/v2ctl
 wget https://https://github.com/byxiaopeng/goorm-v2ray/raw/master/v2ctl
 chmod +x /v2ray/v2ctl
 rm -f /v2ray/config.json
 wget https://github.com/byxiaopeng/goorm-v2ray/raw/master/config.json
-# ¿ªÊ¼ÔËÐÐ
+# å¼€å§‹åŽå°è¿è¡Œ
 nohup /v2ray/v2ray -config=/v2ray/config.json >out.txt 2>&1 &
